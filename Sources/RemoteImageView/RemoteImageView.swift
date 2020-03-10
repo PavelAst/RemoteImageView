@@ -74,5 +74,10 @@ public struct RemoteImageView<Content: View>: View {
   private func loadImage() {
     imageFetcher.fetch()
   }
+  
+  public func purge() {
+    imageData = Data()
+  }
+  
 }
 
